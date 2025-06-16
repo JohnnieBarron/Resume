@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #E5E5E5;
+}
+body {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+
+}
+
+header {
+  display: flex;                
+  justify-content: center;     
+  align-items: center;         
+  border-radius: 30px;
+  border: 0.4vmin solid;
+  margin: 1rem 30vmin;
+  text-align: center;
+  background-color: #1C1C1E;
+  color: #4b7192;
+  min-height: 60px;            
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container a {
+  color: #E5E5E5;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.container a:hover {
+  color: #000000; 
+  text-shadow: 0 0 15px #0088ff, 0 0 25px #f3f3f3;
+}
+
+.cLogo {
+    width: 8vmin;
+    height: 7vmin;
+    flex-shrink: 0;
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+  gap: 2vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 4vmin;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.homebody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vmin;
+}
+
+.PFP {
+    border: .5vmin;
+    border-radius: 60px;
+    border-style: solid;
+    color: #4b7192;
+    padding: 15vmin;
+}
+
+.aboutMe {
+    border: .5vmin;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 2vmin;
+    background: #1C1C1E;
+    color: #4b7192;
+    padding: 2vmin;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .navItems {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1C1C1E;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .navItems.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
