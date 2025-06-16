@@ -6,11 +6,13 @@
     
 }
 body {
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    background-color: #0F0F0F;
-
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.07), transparent 40%),
+    linear-gradient(135deg, #0F0F0F 0%, #1C1C1E 100%);
+  color: #E5E5E5;
 }
 
 header {
@@ -120,6 +122,24 @@ header {
     color: #4b7192;
     padding: 2vmin;
     font-size: 20px;
+}
+
+a {
+  color: #00FFFF; 
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+a:hover,
+a:focus {
+  color: #E5E5E5; 
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #6C757D; 
 }
 
 
