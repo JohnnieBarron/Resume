@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #E5E5E5;
+    
 }
 body {
     display: flexbox;
@@ -91,15 +92,37 @@ header {
 }
 
 .aboutMe {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
     border: .5vmin;
     border-radius: 10px;
     border-style: solid;
     margin-top: 2vmin;
+    margin-left: 12vmin;
+    margin-right: 12vmin;
     background: #1C1C1E;
     color: #4b7192;
     padding: 2vmin;
     font-size: 20px;
 }
+.skills {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: .5vmin;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 2vmin;
+    margin-left: 12vmin;
+    margin-right: 12vmin;
+    background: #1C1C1E;
+    color: #4b7192;
+    padding: 2vmin;
+    font-size: 20px;
+}
+
+
 
 @media (max-width: 768px) {
     .navItems {
@@ -119,6 +142,7 @@ header {
 
     .menu-toggle {
         display: block;
+        padding-right: 10px;
     }
 
     .container {
