@@ -82,7 +82,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vmin;
+    margin-top: 4vmin;
 }
 
 .PFP {
@@ -90,7 +90,17 @@ header {
     border-radius: 60px;
     border-style: solid;
     color: #4b7192;
-    padding: 15vmin;
+    overflow: hidden;
+    width: fit-content;
+    height: 40vmin;
+    width: 35vmin;
+}
+
+.PFP img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .ExpCard {
@@ -117,8 +127,8 @@ header {
     border-radius: 10px;
     border-style: solid;
     margin-top: 2vmin;
-    margin-left: 12vmin;
-    margin-right: 12vmin;
+    margin-left: 30vmin;
+    margin-right: 30vmin;
     background: #1C1C1E;
     color: #4b7192;
     padding: 2vmin;
@@ -132,13 +142,31 @@ header {
     border-radius: 10px;
     border-style: solid;
     margin-top: 2vmin;
-    margin-left: 12vmin;
-    margin-right: 12vmin;
+    margin-left: 30vmin;
+    margin-right: 30vmin;
     background: #1C1C1E;
     color: #4b7192;
     padding: 2vmin;
     font-size: 20px;
 }
+
+.skillList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2px; 
+  row-gap: 1vmin;
+  text-align: center;
+}
+
+.skillList li {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 a {
   color: #00FFFF; 
