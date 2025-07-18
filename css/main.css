@@ -167,20 +167,20 @@ body {
 }
 
 .skills {
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border: .5vmin;
-    border-radius: 10px;
-    border-style: solid;
-    margin-top: 10vmin;
-    width: 50%;
-    background: #1C1C1E;
-    color: #4b7192;
-    padding: 2vmin;
-    font-size: 20px;
-    margin-bottom: 5vmin;
-    z-index: 10;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border: .5vmin;
+  border-radius: 10px;
+  border-style: solid;
+  margin-top: 10vmin;
+  width: 50%;
+  background: #1C1C1E;
+  color: #4b7192;
+  padding: 2vmin;
+  font-size: 20px;
+  margin-bottom: 5vmin;
+  z-index: 10;
 }
 
 .skillList {
@@ -311,16 +311,16 @@ body {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  border: 0.5vmin solid #4b7192;
+  border: .5vmin;
   border-radius: 10px;
-  margin: 10vmin auto;
+  border-style: solid;
+  margin-top: 10vmin;
   width: 50%;
-  min-height: 60vh;
-  max-width: 1000px;
   background: #1C1C1E;
   color: #4b7192;
-  padding: 3vmin 2vmin;
+  padding: 2vmin;
   font-size: 20px;
+  margin-bottom: 5vmin;
   z-index: 10;
 }
 
@@ -330,39 +330,36 @@ body {
   padding: 2vmin;
 }
 
-/* Carousel wrapper */
-.carousel-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 75%;
-  margin: 0 auto;
- 
-}
-
-.carousel-track {
-  display: flex;
-  gap: 2vmin;
-  transition: transform 0.5s ease;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding-bottom: 2vmin;
-}
-
 .project-card {
   background-color: #2a2a2e;
   border-radius: 12px;
   border: 1px solid #4b7192;
-  padding: 2vmin;
-  width: 50%;
+  padding: 1vmin;
+  width: 20vmin;
+  height: fit-content;
+  width: 100%;
+  max-width: 25vmax;
   flex-shrink: 0;
-  margin: 0 auto;
+  margin: 1vmin;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   scroll-snap-align: center;
   color: #d0d0d0;
   text-align: left;
   min-height: 280px;
   box-shadow: 0 0 10px rgba(75, 113, 146, 0.3);
+}
+
+.project-card p {
+  padding: 2px;
+  padding-bottom: 10px;
+}
+
+.GA {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 5vmin;
+  justify-items: center;
+  padding: 2vmin;
 }
 
 .project-card h3 {
@@ -379,45 +376,34 @@ body {
   text-decoration: underline;
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #1C1C1E;
-  border: none;
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vmin;
+  margin-top: 2vmin;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
   color: #4b7192;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 50%;
-  z-index: 2;
+  font-size: 1.2rem;
+  margin-bottom: 1vmin;
+  text-align: center;
 }
 
-.carousel-btn.prev {
-  left: 5px;
+.project-card a {
+  color: #4b7192;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.carousel-btn.next {
-  right: 5px;
-}
-
-.carousel-track::-webkit-scrollbar {
-  height: 12px;
-}
-
-.carousel-track::-webkit-scrollbar-track {
-  background: #1C1C1E;
-  border-radius: 10px;
-}
-
-.carousel-track::-webkit-scrollbar-thumb {
-  background: #4b7192;
-  border-radius: 10px;
-  border: 2px solid #1C1C1E;
-}
-
-.carousel-track::-webkit-scrollbar-thumb:hover {
-  background: #6b9bc5;
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 
@@ -605,7 +591,7 @@ footer {
     width: 100%;
   }
 
-  .carousel-wrapper {
+  /* .carousel-wrapper {
     width: 100%;
   }
 
@@ -613,7 +599,7 @@ footer {
   .carousel-btn.next {
     padding: 0.3rem 0.6rem;
     font-size: 1.5rem;
-  }
+  } */
 
   .menu-toggle {
     display: block;
@@ -663,4 +649,14 @@ footer {
   .navItems li a {
     font-size: 1.2rem;
   }
+
+  .project-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card {
+  width: 90%;
+}
+
 }

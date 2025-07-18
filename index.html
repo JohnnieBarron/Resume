@@ -24,9 +24,10 @@
           <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
             <ul class="navItems">
                 <li class="navText"><a href="#homegreet">Home</a></li>
-                <li class="navText"><a href="#about">About me</a></li>
+                <li class="navText"><a href="#skills">Skills</a></li>
                 <li class="navText"><a href="#exp">Experience</a></li>
                 <li class="navText"><a href="#Projects">My Projects</a></li>
+                <li class="navText"><a href="https://drive.google.com/file/d/1IsRtAyJMrbQAbSZFfm99SwFIbTHhqO2F/view?usp=sharing">My Resume</a></li>
             </ul>
       </nav>
     </header>
@@ -72,7 +73,7 @@
       </div>
 
 
-      <div class="skills"> 
+      <div class="skills" id="skills"> 
         <h2>My skills</h2>
         <p>
             Below is a categorized list of the technologies I use to build full stack applications, 
@@ -158,49 +159,62 @@
     <div class="Projects" id="Projects">
       <h2>Projects</h2>
       <p class="project-intro">
-        Below is a curated collection of the web applications I've developed —
+        Below is a curated collection of the applications I've developed —
         each one built to solve real problems, explore innovative ideas, or push
         my skills further as a full stack software engineer.
       </p>
 
       <div class="carousel-wrapper">
-        <button class="carousel-btn prev">&#10094;</button>
+        
+        <div class="project" id="projectTrack">
+          <h2>General Assemble</h2>
+          <div class="GA">
+            <div class="project-card">
+              <h3>Minesweeper</h3>
+              <p>
+                Built with HTML, CSS, and JavaScript as a challenge to deepen my 
+                understanding of core frontend concepts. This was my first coding project!
+              </p>
+              <a href="https://github.com/JohnnieBarron/Minesweeper.git" target="_blank">View Code</a> |
+              <a href="https://johnniebarron.github.io/Minesweeper/" target="_blank">Play</a>
+            </div>
 
-        <div class="carousel-track" id="projectTrack">
-          <div class="project-card">
-            <h3>Minesweeper</h3>
-            <p>
-              Built with HTML, CSS, and JavaScript as a challenge to deepen my 
-              understanding of core frontend concepts. This was my first coding project!
-            </p>
-            <a href="https://github.com/JohnnieBarron/Minesweeper.git" target="_blank">View Code</a> |
-            <a href="https://johnniebarron.github.io/Minesweeper/" target="_blank">Play</a>
-          </div>
+            <div class="project-card">
+              <h3>ElevateSelf</h3>
+              <p>
+                A productivity web app built with the MEN stack that empowers users to schedule and track their 
+                goals with clarity and structure. This was my first full-stack deployment, showcasing both 
+                front-end functionality and robust back-end integration.
+              </p>
+              <a href="https://github.com/JohnnieBarron/productivity-app.git" target="_blank">View Code</a> |
+              <a href="https://elevateself-828b3b1b74f3.herokuapp.com/" target="_blank">View App</a>
+            </div>
 
-          <div class="project-card">
-            <h3>ElevateSelf</h3>
-            <p>
-              A productivity web app built with the MEN stack that empowers users to schedule and track their 
-              goals with clarity and structure. This was my first full-stack deployment, showcasing both 
-              front-end functionality and robust back-end integration.
-            </p>
-            <a href="https://github.com/JohnnieBarron/productivity-app.git" target="_blank">View Code</a> |
-            <a href="https://elevateself-828b3b1b74f3.herokuapp.com/" target="_blank">View App</a>
-          </div>
+            <div class="project-card">
+              <h3>myPR.IO</h3>
+              <p>
+                A fitness tracking application inspired by my years as a personal trainer, designed to 
+                support users in building consistency and reaching their goals. Built with the MERN stack 
+                to deliver a responsive, full-stack experience.
+              </p>
+              <a href="https://github.com/JohnnieBarron/myPR.IO" target="_blank">View Code</a> |
+              <a href="https://mypr-io-app-9ccd9373ea98.herokuapp.com/" target="_blank">View App</a>
+            </div>
+            
+            <div class="project-card">
+              <h3>MergeConflict</h3>
+              <p>
+                A Django-based multiplayer card game that brings the humor of Cards Against Humanity to the world of software development.
+                Battle your fellow developers with programming jokes, git references, and all the tech humor that makes our daily lives both 
+                hilarious and painful.
+              </p>
+              <a href="https://github.com/JohnnieBarron/MergeConflict" target="_blank">View Code</a> |
+              <a href="https://mergeconflict.thisdemo.rocks/" target="_blank">View App</a>
+            </div>
 
-          <div class="project-card">
-            <h3>myPR.IO</h3>
-            <p>
-              A fitness tracking application inspired by my years as a personal trainer, designed to 
-              support users in building consistency and reaching their goals. Built with the MERN stack 
-              to deliver a responsive, full-stack experience.
-            </p>
-            <a href="https://github.com/JohnnieBarron/myPR.IO" target="_blank">View Code</a> |
-            <a href="https://mypr-io-app-9ccd9373ea98.herokuapp.com/" target="_blank">Visit</a>
           </div>
         </div>
 
-        <button class="carousel-btn next">&#10095;</button>
       </div>
     </div>
 
