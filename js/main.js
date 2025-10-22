@@ -24,14 +24,5 @@ const trackStyle = getComputedStyle(track);
 const gap = parseFloat(trackStyle.gap) || 0;
 const cardWidth = card.offsetWidth + gap;
 
-nextBtn.addEventListener('click', () => {
-  let newScrollLeft = Math.min(track.scrollLeft + cardWidth, track.scrollWidth - track.clientWidth);
-  track.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
-});
-
-prevBtn.addEventListener('click', () => {
-  let newScrollLeft = Math.max(track.scrollLeft - cardWidth, 0);
-  track.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
-});
 
 
